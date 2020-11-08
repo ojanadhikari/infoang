@@ -1,0 +1,23 @@
+<table class="table table-striped table-dark">
+    <thead>
+      <tr>
+        
+        <th scope="col">Serial Number</th>
+        <th scope="col">Name</th>
+        <th scope="col">Address</th>
+        <th scope="col">Checked Date</th>
+        <th scope="col">Temperature</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let tem of temp">
+      <tr>
+        
+        <td>{{tem.serialNumber}}</td>
+        <td>{{tem.fullName}}</td>
+        <td>{{tem.address}}</td>
+        <td>{{tem.checkedInDate}}</td>
+        <td>{{tem.temperature}}</td>
+      </tr>
+      
+    </tbody>
+  </table>
